@@ -1,0 +1,23 @@
+#C -> create
+POST http:localhost:8080/contas
+Content-Type: applicatin/json
+{
+    "nome":"Fabiano"
+    "documento": "123456789"
+}
+
+#R -> read
+GET http:localhost:8080/contas
+Content-Type: applicatin/json
+
+#U -> update
+PUT http:localhost:8080/contas/123456789
+Content-Type: applicatin/json
+{
+    "nome": "Fabiano dos Santos Silva",
+    "documento": "12345678976",
+    "saldo": "1500"
+}
+
+#D -> delete
+DELETE http:localhost:8080/contas/12345678976
